@@ -1,0 +1,52 @@
+{
+  "tools": [
+    {
+      "src": "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white",
+      "alt": "Visual Studio Code"
+    },
+    {
+      "src": "https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E",
+      "alt": "Prettier"
+    },
+    {
+      "src": "https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white",
+      "alt": "Eslint"
+    },
+    {
+      "src": "https://img.shields.io/badge/hotjar-FD3A5C?style=for-the-badge&logo=hotjar&logoColor=white",
+      "alt": "HotJar"
+    },
+    {
+      "src": "https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6",
+      "alt": "Adobe XD"
+    },
+    {
+      "src": "https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white",
+      "alt": "Adobe Illustrator"
+    },
+    {
+      "src": "https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=black",
+      "alt": "Adobe Photoshop"
+    },
+    {
+      "src": "https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white",
+      "alt": "Post Man"
+    },
+    {
+      "src": "https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white",
+      "alt": "Netlify"
+    },
+    {
+      "src": "https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=for-the-badge",
+      "alt": "GitHub Pages Badge"
+    },
+    {
+      "src": " https://img.shields.io/badge/Figma-red?style=for-the-badge&logo=figma&logoColor=white",
+      "alt": "Figma"
+    },
+    {
+      "src": "https://img.shields.io/badge/Trello-blue?style=for-the-badge&logo=trello&logoColor=white ",
+      "alt": "Trello"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "projects": [
+    {
+      "title": "E-commerce website",
+      "image": "images/Ecom.png",
+      "description": "Responsive storefront with product browsing, cart, checkout, and category filtering.",
+      "github": "https://github.com/azebFitwi/react-project-ecom-store.git",
+      "live_demo": "https://ca-react-project-ecom.netlify.app",
+      "tech": "React, styled-components, HTML",
+      "type": "school"
+    },
+    {
+      "title": "Auction website",
+      "image": "images/Auction.png",
+      "description": "Bidding marketplace where users browse, list items, and place bids with listing management and bidding history.",
+      "github": "https://github.com/azebFitwi/Project_Exam3.git",
+      "live_demo": "https://lovely-lebkuchen-1efdca.netlify.app/",
+      "tech": "HTML, SCSS, Bootstrap, JavaScript",
+      "type": "school"
+    },
+    {
+      "title": "Accommodation website",
+      "image": "images/holidaze.png",
+      "description": "Booking platform for venues with availability display, host management, and a clear reservation flow.",
+      "github": "https://github.com/azebFitwi/holidaze.git",
+      "live_demo": "https://holidaze-azeb-fitwi.netlify.app/",
+      "tech": "HTML, Tailwind CSS, React",
+      "type": "school"
+    },
+    {
+      "title": "Blog website",
+      "image": "images/blog_image.PNG",
+      "description": "Interior design blog showcasing articles and imagery with a clean, responsive layout.",
+      "github": "https://github.com/Noroff-FEU-Assignments/project-exam-1-azebFitwi.git",
+      "live_demo": "https://interior-design-blog.netlify.app/",
+      "tech": "HTML, CSS, JavaScript, CMS",
+      "type": "school"
+    },
+    {
+      "title": "Rainy Days website",
+      "image": "images/rainyDays.PNG",
+      "description": "Online store for outdoor jackets featuring product pages, cart, and checkout optimized for mobile.",
+      "github": "https://github.com/azebFitwi/cms-design-cross.course-project.git",
+      "live_demo": "https://heroic-buttercream-d46cf0.netlify.app",
+      "tech": "HTML, CSS",
+      "type": "school"
+    },
+    {
+      "title": "Community Science Museum website",
+      "image": "images/com-museum.PNG",
+      "description": "Informational site highlighting exhibits, events, and visitor details with accessible, engaging design.",
+      "github": "https://github.com/azebFitwi/19-12-21_Semester-project1_azeb-fitwi.git",
+      "live_demo": "https://nifty-mcnulty-9df360.netlify.app/",
+      "tech": "HTML, CSS",
+      "type": "school"
+    },
+    {
+      "title": "Full stack E-commerce website",
+      "image": "images/ecom-nextJs.png",
+      "description": "Real-time full‑stack e‑commerce built with Next.js 15: product catalog, cart, orders, and admin tools.",
+      "github": "https://github.com/azebFitwi/ecommerce-app-azeb/tree/master",
+      "live_demo": "https://ecommerce-app-azeb.vercel.app/orders",
+      "tech": "Next.js, React, TypeScript, sanity, Stripe, clerk, Tailwind CSS",
+      "type": "personal"
+    },
+    {
+      "title": "AI Agent SaaS Platform",
+      "image": "images/dropbox.png",
+      "description": "Cloud storage app with auth, file uploads, previews, folders, drag‑and‑drop, and full CRUD (Next.js 15, React, TypeScript, Clerk, Firebase, shadcn/ui).",
+      "github": "https://github.com/azebFitwi/dropbox-clone.git",
+      "live_demo": "https://dropbox-clone-mocha.vercel.app/",
+      "tech": "Next.js, React, TypeScript, Clerk, Firebase, shadcn/ui, Tailwind CSS",
+      "type": "ai"
+    },
+    {
+      "title": " LMS with Admin Dashboard",
+      "image": "images/Lms.png",
+      "description": "Learning management system with course catalog, enrollment, progress tracking, and admin tools with sanity backend.",
+      "github": "https://github.com/azebFitwi/lms-app-azeb-samuel",
+      "live_demo": "https://lms-app-azeb-samuel.vercel.app/",
+      "tech": "Next.js, React, TypeScript, sanity, Stripe, clerk, Tailwind CSS",
+      "type": "personal"
+    }
+  ]
+}

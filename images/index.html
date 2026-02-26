@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Portfolio Preview - Sab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="stylesheet" href="styles/css/media.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("sbV7xnoLQtXTZQnNn");
+      })();
+    </script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900 text-white min-h-screen"
+  >
+    <!-- Background Effects -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div
+        class="absolute -top-40 -right-40 w-80 h-80 bg-teal-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 float-animation"
+      ></div>
+      <div
+        class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 float-animation"
+        style="animation-delay: 2s"
+      ></div>
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 float-animation"
+        style="animation-delay: 4s"
+      ></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md py-4"
+    >
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold">
+            <span class="text-glitter glitter-scroll">SSF</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-teal-400 transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-teal-400 transition-colors"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-300 hover:text-teal-400 transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-300 hover:text-teal-400 transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-teal-400 transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center px-6 pt-20"
+    >
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 md:px-12 items-center">
+          <div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">
+              <span class="text-glitter glitter-scroll">
+                Hi, I'm azeb</span
+              >
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-gray-300 mb-4">
+              Frontend developer/UX/UI Designer
+            </h2>
+            <p class="text-lg text-gray-400 mb-8">
+              Creating beautiful digital experiences
+            </p>
+
+            <div class="flex flex-wrap gap-4 mb-8">
+              <a
+                href="#contact"
+                class="px-6 py-3 gradient-bg text-white rounded-full font-medium hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 hover-scale"
+              >
+                Get In Touch
+              </a>
+              <a
+                href="./images/English-CV.png"
+                class="px-6 py-3 border border-teal-500 text-teal-400 rounded-full font-medium hover:bg-teal-500/10 transition-all duration-300"
+              >
+                <i class="fas fa-azebsame@gmail.comd mr-2"></i> 
+              </a>
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:bg-teal-500/20 transition-all"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:bg-teal-500/20 transition-all"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:bg-teal-500/20 transition-all"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="relative w-80 h-80 mx-auto">
+              <div
+                class="absolute inset-0 gradient-bg rounded-full blur-2xl opacity-30 animate-pulse"
+              ></div>
+              <img
+                src="images/9.jpg"
+                alt="Sab"
+                class="relative w-full h-full rounded-full object-cover border-4 border-white/10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            About <span class="text-gradient">Me</span>
+          </h2>
+          <div
+            class="w-24 h-1 gradient-bg mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="glass-effect rounded-2xl p-8">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              I am a developer, building on the skills and knowledge I
+              gained during my studies at Noroff School of Technology
+              and Digital Media, where I completed the Frontend
+              Development course. I chose this path because of my deep
+              passion for design and creativity, and I’ve found the
+              perfect way to merge these two passions in my work. I
+              burn for user-friendly design and take pride in writing
+              clean, efficient code. Coding isn’t just a job for
+              me—it’s something I truly enjoy. Even outside of work, I
+              constantly seek out new courses, challenges, and
+              personal projects to keep growing and refining my craft.
+              As I am also an event planner, creativity, planning,
+              design, and décor are among my strong areas, and doing
+              it makes me happy.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-purple-400 font-medium"
+                    >Location:</span
+                  >
+                  <span class="text-gray-300">Stockholm, Sweden</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-purple-400 font-medium"
+                    >Email:</span
+                  >
+                  <span class="text-gray-300"
+                    >azebsame@gmail.com</span
+                  >
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-purple-400 font-medium"
+                    >Available:</span
+                  >
+                  <span class="text-green-400 font-medium"
+                    >Open to opportunities</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Technical <span class="text-gradient">Skills</span>
+          </h2>
+          <div
+            class="w-24 h-1 gradient-bg mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto">
+          <div class="glass-effect rounded-lg p-6">
+            <div class="skills-descriptions text-gray-300"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Featured <span class="text-gradient">Projects</span>
+          </h2>
+          <div
+            class="w-24 h-1 gradient-bg mx-auto rounded-full mb-8"
+          ></div>
+
+          <div class="flex flex-col items-center mb-8 w-full">
+            <div
+              id="type-filters"
+              class="flex flex-wrap justify-center gap-6 mb-4 w-full"
+            >
+              <!-- Dynamic type filter cards will be added here (School / AI / Personal / All) -->
+            </div>
+
+            <div
+              id="tech-filters"
+              class="flex flex-wrap justify-center gap-4 hidden w-full"
+            >
+              <!-- Dynamic tech filters will be added here; shown after selecting a type -->
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-grid grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Get In <span class="text-gradient">Touch</span>
+          </h2>
+          <div
+            class="w-24 h-1 gradient-bg mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div>
+            <h3 class="text-2xl font-semibold text-white mb-6">
+              Let's Connect
+            </h3>
+            <p class="text-gray-300 mb-8">
+              I'm always interested in hearing about new opportunities
+              and exciting projects. Feel free to reach out if you'd
+              like to collaborate or just have a chat!
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope text-purple-400"></i>
+                </div>
+                <div>
+                  <p class="text-gray-400 text-sm">Email</p>
+                  <p class="text-white">azebsame@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-phone text-purple-400"></i>
+                </div>
+                <div>
+                  <p class="text-gray-400 text-sm">Phone</p>
+                  <p class="text-white">0700418127</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center"
+                >
+                  <i
+                    class="fas fa-map-marker-alt text-purple-400"
+                  ></i>
+                </div>
+                <div>
+                  <p class="text-gray-400 text-sm">Location</p>
+                  <p class="text-white">Stockholm, Sweden</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form class="glass-effect rounded-xl p-6">
+              <div class="mb-4">
+                <label class="block text-gray-300 mb-2">Name</label>
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label class="block text-gray-300 mb-2">Email</label>
+                <input
+                  type="email"
+                  class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  placeholder="your@email.com"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-gray-300 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  rows="5"
+                  class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 resize-none"
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full px-6 py-3 gradient-bg text-white rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover-scale"
+              >
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-white/10">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <div class="text-gray-400">
+            © 2024 azeb Fitwi. All rights reserved.
+          </div>
+
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-all"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-all"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-all"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/js/main.js"></script>
+    <script src="scripts/js/badges.js"></script>
+    <script src="scripts/js/card.js"></script>
+    <script src="scripts/js/dark-mode.js"></script>
+    <script src="scripts/js/tools.js"></script>
+    <script src="scripts/js/script.js"></script>
+    <script src="scripts/js/contact.js"></script>
+
+    <!-- AI assistant widget (local rule-based assistant that can apply filters) -->
+    <div id="ai-agent-root">
+      <button id="ai-toggle" aria-label="Open assistant">🤖</button>
+      <div id="ai-panel" aria-hidden="true">
+        <header>
+          <strong>Project Assistant</strong>
+          <button id="ai-close" aria-label="Close">✕</button>
+        </header>
+        <div id="ai-messages"></div>
+        <form id="ai-form">
+          <input
+            id="ai-input"
+            placeholder="Ask: e.g. show school projects with React"
+            autocomplete="off"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/js/ai-agent.js"></script>
+  </body>
+</html>

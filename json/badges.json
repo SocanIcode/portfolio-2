@@ -1,0 +1,59 @@
+{
+    "badges":[
+    {
+        "src": "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+        "alt": "HTML5"
+    },
+    {
+        "src": "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+        "alt": "CSS3"
+    },
+    {
+        "src": "https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white",
+        "alt": "SASS"
+    },
+    {
+        "src": "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
+        "alt": "Bootstrap"
+    },
+    {
+        "src": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+        "alt": "Tailwind"
+    },
+    {
+        "src": "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+        "alt": "JavaScript"
+    },
+   
+    {
+        "src": "https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=for-the-badge",
+        "alt": "React Badge"
+    },
+   
+  
+    {
+        "src": "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white",
+        "alt": "GitHub"
+    },
+   
+    {
+        "src": "https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white",
+        "alt": "WordPress"
+    },
+    {
+        "src": "https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white",
+        "alt": "NPM"
+    },
+    {
+        "src": "https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white",
+        "alt": "Jest"
+    },
+    {
+        "src": "https://img.shields.io/badge/Cypress-17202C?logo=cypress&logoColor=fff&style=for-the-badge",
+        "alt": "Cypress Badge"
+    }
+]
+
+
+
+}
