@@ -26,31 +26,18 @@
     </script>
   </head>
   <body
-    class="bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900 text-white min-h-screen"
+    class="min-h-screen text-white bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950"
   >
-    <!-- Background Effects -->
-    <div class="fixed inset-0 overflow-hidden pointer-events-none">
-      <div
-        class="absolute -top-40 -right-40 w-80 h-80 bg-teal-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 float-animation"
-      ></div>
-      <div
-        class="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 float-animation"
-        style="animation-delay: 2s"
-      ></div>
-      <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 float-animation"
-        style="animation-delay: 4s"
-      ></div>
-    </div>
-
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md py-4">
       <div class="container mx-auto px-6">
         <div class="flex justify-between items-center">
-          <div class="text-2xl font-bold flex items-center gap-2">
+          <div
+            class="text-2xl font-bold flex items-center gap-2"
+            aria-label="Azeb Samuel"
+          >
             <span class="text-glitter glitter-scroll tracking-wide">AS</span>
             <span class="logo-wave" aria-hidden="true">👋</span>
-            <span class="sr-only">AS</span>
           </div>
           <div class="hidden md:flex space-x-8">
             <a
@@ -86,50 +73,66 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="min-h-screen flex items-center justify-center px-6 pt-20"
+      class="min-h-screen flex items-center justify-center px-6 pt-24"
     >
       <div class="container mx-auto">
         <div class="grid md:grid-cols-2 gap-12 md:px-12 items-center">
           <div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-4">
-              <span class="text-glitter glitter-scroll"> Hi, I'm azeb</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">
+              <span class="text-glitter glitter-scroll">Hi, I'm Azeb</span>
             </h1>
-            <title>Azeb Samuel| Frontend Developer & UX/UI Designer</title>
+
+            <p class="text-xl md:text-2xl text-gray-300 mb-3">
+              Frontend Developer
+            </p>
+
             <p class="text-lg text-gray-400 mb-8">
-              Creating beautiful digital experiences
+              Designing and building responsive, accessible, and user-focused
+              digital experiences
             </p>
 
             <div class="flex flex-wrap gap-4 mb-8">
               <a
                 href="#contact"
-                class="px-6 py-3 gradient-bg text-white rounded-full font-medium hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 hover-scale"
+                class="px-6 py-3 gradient-bg text-white rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover-scale"
               >
                 Get In Touch
               </a>
+
               <a
-                href="./images/English-CV.png"
-                class="px-6 py-3 border border-teal-500 text-teal-400 rounded-full font-medium hover:bg-teal-500/10 transition-all duration-300"
+                href="./assets/cv/Azeb-Samuel-CV.pdf"
+                download="Azeb-Samuel-CV.pdf"
+                class="px-6 py-3 border border-purple-500 text-teal-400 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover-scale"
               >
                 <i class="fas fa-download mr-2"></i> Download CV
               </a>
             </div>
 
-            <div class="flex gap-4">
+            <div class="flex gap-4" aria-label="Social links">
               <a
-                href="#"
-                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:bg-teal-500/20 transition-all"
+                href="https://github.com/SocanIcode"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:!bg-purple-500/40 transition-colors duration-300"
+                aria-label="GitHub"
               >
                 <i class="fab fa-github"></i>
               </a>
+
               <a
-                href="#"
-                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:bg-teal-500/20 transition-all"
+                href="https://www.linkedin.com/in/azebsamuel"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:!bg-purple-500/40 transition-colors duration-300"
+                aria-label="LinkedIn"
               >
                 <i class="fab fa-linkedin"></i>
               </a>
+
               <a
-                href="#"
-                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:bg-teal-500/20 transition-all"
+                href="mailto:azebsame@gmail.com"
+                class="w-12 h-12 glass-effect rounded-full flex items-center justify-center hover:!bg-purple-500/40 transition-colors duration-300"
+                aria-label="Email"
               >
                 <i class="fas fa-envelope"></i>
               </a>
@@ -140,11 +143,14 @@
             <div class="relative w-80 h-80 mx-auto">
               <div
                 class="absolute inset-0 gradient-bg rounded-full blur-2xl opacity-30 animate-pulse"
+                aria-hidden="true"
               ></div>
+
               <img
                 src="images/9.jpg"
-                alt="Sab"
+                alt="Portrait of Azeb"
                 class="relative w-full h-full rounded-full object-cover border-4 border-white/10"
+                loading="lazy"
               />
             </div>
           </div>
@@ -165,18 +171,21 @@
         <div class="max-w-4xl mx-auto">
           <div class="glass-effect rounded-2xl p-8">
             <p class="text-lg text-gray-300 leading-relaxed mb-6">
-              I am a developer, building on the skills and knowledge I gained
-              during my studies at Noroff School of Technology and Digital
-              Media, where I completed the Frontend Development course. I chose
-              this path because of my deep passion for design and creativity,
-              and I’ve found the perfect way to merge these two passions in my
-              work. I burn for user-friendly design and take pride in writing
-              clean, efficient code. Coding isn’t just a job for me—it’s
-              something I truly enjoy. Even outside of work, I constantly seek
-              out new courses, challenges, and personal projects to keep growing
-              and refining my craft. As I am also an event planner, creativity,
-              planning, design, and décor are among my strong areas, and doing
-              it makes me happy.
+              I grew up fascinated by computers - playing on old Pentium
+              machines and watching how interfaces came to life.Even then, I was
+              drawn to design, but I carried a deep fear that coding wasn't
+              meant for someone like me. I doubted my abilities and
+              underestimated myself. Creativity, however, was always my part of
+              my life. Whether I was baking, crafting, or creating by hand,
+              making things gave me a sense of calm and purpose. Later, while
+              working with marketing and automation, something shifted. I
+              realized that to grow fully, I had to face that fear and learn to
+              code. The journey was challenging and often uncomfortable, but I
+              stayed committed and completed a two-year program at Noroff.
+              Today, I bring together creativity, empathy, and technical skills
+              to build thoughtful, user-centered digital experiences and I’m
+              excited to grow my professional career in an environment where
+              learning, quality, and collaboration are valued.
             </p>
 
             <div class="grid md:grid-cols-2 gap-6">
@@ -235,16 +244,12 @@
             <div
               id="type-filters"
               class="flex flex-wrap justify-center gap-6 mb-4 w-full"
-            >
-              <!-- Dynamic type filter cards will be added here (School / AI / Personal / All) -->
-            </div>
+            ></div>
 
             <div
               id="tech-filters"
               class="flex flex-wrap justify-center gap-4 hidden w-full"
-            >
-              <!-- Dynamic tech filters will be added here; shown after selecting a type -->
-            </div>
+            ></div>
           </div>
         </div>
 
@@ -267,12 +272,10 @@
         <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div>
             <h3 class="text-2xl font-semibold text-white mb-6">
-              Let's Connect
+              Let's Connect👋
             </h3>
             <p class="text-gray-300 mb-8">
-              I'm always interested in hearing about new opportunities and
-              exciting projects. Feel free to reach out if you'd like to
-              collaborate or just have a chat!
+              Always open to new opportunities—feel free to reach out ✨
             </p>
 
             <div class="space-y-4">
@@ -296,7 +299,7 @@
                 </div>
                 <div>
                   <p class="text-gray-400 text-sm">Phone</p>
-                  <p class="text-white">0700418127</p>
+                  <p class="text-white">+46700418127</p>
                 </div>
               </div>
 
@@ -362,12 +365,12 @@
           class="flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <div class="text-gray-400">
-            © 2024 azeb Fitwi. All rights reserved.
+            © 2024 Azeb Samuel. All rights reserved.
           </div>
 
           <div class="flex gap-4">
             <a
-              href="https://github.com/azebFitwi"
+              href="https://github.com/SocanIcode"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-all"
@@ -375,7 +378,7 @@
               <i class="fab fa-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+              href="https://www.linkedin.com/in/azebsamuel"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-all"
@@ -396,19 +399,21 @@
     <script src="scripts/js/main.js"></script>
     <script src="scripts/js/badges-tools.js"></script>
     <script src="scripts/js/card.js"></script>
-    <script src="scripts/js/dark-mode.js"></script>
     <script src="scripts/js/script.js"></script>
     <script src="scripts/js/contact.js"></script>
 
-    <!-- AI assistant widget (local rule-based assistant that can apply filters) -->
+    <!-- AI assistant widget -->
     <div id="ai-agent-root">
       <button id="ai-toggle" aria-label="Open assistant">🤖</button>
+
       <div id="ai-panel" aria-hidden="true">
         <header>
           <strong>Project Assistant</strong>
           <button id="ai-close" aria-label="Close">✕</button>
         </header>
+
         <div id="ai-messages"></div>
+
         <form id="ai-form">
           <input
             id="ai-input"

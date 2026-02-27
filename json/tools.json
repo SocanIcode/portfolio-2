@@ -8,13 +8,10 @@
       "src": "https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E",
       "alt": "Prettier"
     },
+
     {
-      "src": "https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white",
-      "alt": "Eslint"
-    },
-    {
-      "src": "https://img.shields.io/badge/hotjar-FD3A5C?style=for-the-badge&logo=hotjar&logoColor=white",
-      "alt": "HotJar"
+      "src": "https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white",
+      "alt": "Supabase"
     },
     {
       "src": "https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6",
@@ -43,10 +40,6 @@
     {
       "src": " https://img.shields.io/badge/Figma-red?style=for-the-badge&logo=figma&logoColor=white",
       "alt": "Figma"
-    },
-    {
-      "src": "https://img.shields.io/badge/Trello-blue?style=for-the-badge&logo=trello&logoColor=white ",
-      "alt": "Trello"
     }
   ]
 }

@@ -1,6 +1,8 @@
-// Simple local AI-like assistant (rule-based) to parse short queries and apply filters
-// This is intentionally lightweight and runs entirely in the browser.
-
+if (window.__aiAgentInitialized) {
+  console.warn("AI agent already initialized");
+} else {
+  window.__aiAgentInitialized = true;
+}
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("ai-toggle");
   const panel = document.getElementById("ai-panel");
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function appendMessage(text, self = false) {
     const el = document.createElement("div");
     el.className = self ? "ai-msg ai-msg-self" : "ai-msg ai-msg-bot";
-    // Use smaller font and chat bubble style
+
     el.innerHTML = text;
     messages.appendChild(el);
     messages.scrollTop = messages.scrollHeight;
@@ -26,13 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!greeted) {
       appendMessage(
         `<b>Hi, I'm azeb!</b><br>Welcome to my portfolio 👋<br>Ask me about my projects, e.g.:<br><span class='ai-hint'>'show school projects with React'</span> or <span class='ai-hint'>'show all'</span>.`,
-        false
+        false,
       );
       greeted = true;
     }
   }
 
-  // Toggle open/close on button click, and close on outside click
+  // Toggle open/close on button click
   let panelOpen = false;
   toggle.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -50,11 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   // Close if click outside panel
   document.addEventListener("mousedown", (e) => {
-    if (
-      panelOpen &&
-      !panel.contains(e.target) &&
-      e.target !== toggle
-    ) {
+    if (panelOpen && !panel.contains(e.target) && e.target !== toggle) {
       panel.setAttribute("aria-hidden", "true");
       panel.style.display = "none";
       panelOpen = false;
@@ -74,25 +72,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Small talk and positive responses
     const lower = text.toLowerCase();
-    if (
-      /(hi|hello|hey|welcome|who are you|your name|about you)/.test(
-        lower
-      )
-    ) {
+    if (/(hi|hello|hey|welcome|who are you|your name|about you)/.test(lower)) {
       appendMessage(
-        "Hi! I'm azeb, your portfolio guide. Ask me about my projects or filter by type or technology!"
+        "Hi! I'm azeb, your portfolio guide. Ask me about my projects or filter by type or technology!",
       );
       return;
     }
     if (/thank(s| you)/.test(lower)) {
       appendMessage(
-        "You're welcome! 😊 If you want to see a project, just ask."
+        "You're welcome! 😊 If you want to see a project, just ask.",
       );
       return;
     }
     if (/how are you/.test(lower)) {
       appendMessage(
-        "I'm doing great, thank you! How can I help you explore my work?"
+        "I'm doing great, thank you! How can I help you explore my work?",
       );
       return;
     }
@@ -103,12 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const res = window.portfolioFilters.filter("all", null);
       if (res.length > 0) {
         appendMessage(
-          `I have ${res.length} projects. Let me know if you want to filter by technology or type!`
+          `I have ${res.length} projects. Let me know if you want to filter by technology or type!`,
         );
       } else {
-        appendMessage(
-          "Oops, I couldn't find any projects right now."
-        );
+        appendMessage("Oops, I couldn't find any projects right now.");
       }
       return;
     }
@@ -145,21 +137,18 @@ document.addEventListener("DOMContentLoaded", () => {
       appendMessage(
         `Here are my <b>${detectedType}</b> projects${
           detectedTech ? ` using <b>${detectedTech}</b>` : ""
-        }:`
+        }:`,
       );
-      const res = window.portfolioFilters.filter(
-        detectedType,
-        detectedTech
-      );
+      const res = window.portfolioFilters.filter(detectedType, detectedTech);
       if (res.length > 0) {
         appendMessage(
           `I found ${res.length} project${
             res.length > 1 ? "s" : ""
-          }. Want to know more about any of them?`
+          }. Want to know more about any of them?`,
         );
       } else {
         appendMessage(
-          "Sorry, I couldn't find any projects matching that filter. Try another technology or type!"
+          "Sorry, I couldn't find any projects matching that filter. Try another technology or type!",
         );
       }
       return;
@@ -167,19 +156,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // fallback: if user asks for a tech only
     if (detectedTech) {
-      appendMessage(
-        `Looking for projects using <b>${detectedTech}</b>...`
-      );
+      appendMessage(`Looking for projects using <b>${detectedTech}</b>...`);
       const res = window.portfolioFilters.filter("all", detectedTech);
       if (res.length > 0) {
         appendMessage(
           `I found ${res.length} project${
             res.length > 1 ? "s" : ""
-          }. Want to filter by type too?`
+          }. Want to filter by type too?`,
         );
       } else {
         appendMessage(
-          "Sorry, I couldn't find any projects with that technology. Try another tech or type!"
+          "Sorry, I couldn't find any projects with that technology. Try another tech or type!",
         );
       }
       return;
@@ -187,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // otherwise, respond with guidance
     appendMessage(
-      "I'm not sure what you mean, but you can ask things like:<br><span class='ai-hint'>'show school projects with React'</span> or <span class='ai-hint'>'show all'</span>."
+      "I'm not sure what you mean, but you can ask things like:<br><span class='ai-hint'>'show school projects with React'</span> or <span class='ai-hint'>'show all'</span>.",
     );
   });
 });

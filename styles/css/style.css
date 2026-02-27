@@ -144,9 +144,45 @@
   }
 }
 
-/* Respect users who prefer reduced motion */
+/* reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .logo-wave {
     animation: none;
   }
+}
+
+/* Shared action buttons (GitHub + Live Demo) */
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  background: rgba(236, 72, 153, 0.18);
+  color: rgb(236, 72, 153);
+  border: 1px solid rgba(236, 72, 153, 0.35);
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+/* Icon size consistency */
+.action-btn i,
+.action-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Hover */
+.action-btn:hover {
+  background: rgba(236, 72, 153, 0.28);
+  box-shadow: 0 8px 22px rgba(236, 72, 153, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Active / focus */
+.action-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
 }
