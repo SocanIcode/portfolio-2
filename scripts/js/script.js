@@ -1,19 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Smooth scroll only for # links that exist on the current page
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      if (!targetId || targetId === "#") return;
-
-      const target = document.querySelector(targetId);
-      if (!target) return; // IMPORTANT: do nothing if section isn't on this page
-
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
-
-  // Navbar padding change on scroll (safe)
   const nav = document.querySelector("nav");
   if (!nav) return;
 

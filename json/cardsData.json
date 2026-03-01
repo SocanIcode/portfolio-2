@@ -5,6 +5,7 @@
       "image": "images/Auction.png",
       "description": "A bidding marketplace where users can browse listings, create items, place bids, and track bidding history.",
       "github": "https://github.com/NoroffFEU/Semester-Project-2-Auction-House.git",
+      "readme": "https://github.com/NoroffFEU/Semester-Project-2-Auction-House/blob/main/README.md#readme",
       "live_demo": "https://semester-project-2-auction-house.netlify.app/",
       "tech": "React,JavaScript, Tailwind CSS"
     },
@@ -14,16 +15,18 @@
 
       "description": "A responsive storefront featuring product browsing, category filtering, a shopping cart, and a smooth checkout flow.",
       "github": "https://github.com/NoroffFEU/JavaScript-Frameworks-ca.git",
+      "readme": "https://github.com/NoroffFEU/JavaScript-Frameworks-ca/blob/main/README.md#readme",
       "live_demo": "https://onlie-shop.netlify.app/",
       "tech": "HTML, Next.Js, Tailwind CSS, "
     },
     {
-      "title": "Accommodation website",
-      "image": "images/holidaze.png",
+      "title": "SocialMedia Platform ",
+      "image": "images/cssframework.png",
       "description": "A venue booking platform featuring availability display, host management, and a clear, user-friendly reservation flow.",
-      "github": "https://github.com/SocanIcode/Project-Exam-2.git",
-      "live_demo": "https://holidazebookingpe2.netlify.app/",
-      "tech": "HTML, Tailwind CSS, TypeScript"
+      "github": "https://github.com/SocanIcode/CSS-Frameworks-Course-Assignment/tree/css-frameworks",
+      "readme": "https://github.com/SocanIcode/CSS-Frameworks-Course-Assignment/blob/css-frameworks/README.md#readme",
+      "live_demo": "https://fancy-eclair-31b524.netlify.app/profile/",
+      "tech": "HTML, Tailwind CSS, JavaScript"
     }
   ]
 }

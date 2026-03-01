@@ -198,3 +198,9 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
 }
+.card-back a {
+  display: inline !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  text-decoration: underline !important;
+}
