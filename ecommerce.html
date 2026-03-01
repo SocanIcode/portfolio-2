@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Website | Azeb Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="stylesheet" href="styles/css/media.css" />
+  </head>
+  <body
+    class="min-h-screen text-white bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950"
+  >
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md py-4">
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <a href="./index.html" class="text-gray-300 hover:text-teal-400"
+          >Home</a
+        >
+        <div class="flex gap-4 text-gray-300">
+          <a href="./about.html" class="hover:text-teal-400">About</a>
+          <a href="./contact.html" class="hover:text-teal-400">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-28 pb-16 px-6">
+      <div class="container mx-auto max-w-5xl">
+        <a
+          href="./index.html#projects"
+          class="text-gray-300 hover:text-teal-400"
+          >← Back to Projects</a
+        >
+
+        <h1 class="text-4xl md:text-5xl font-bold mt-6">
+          E-commerce <span class="text-gradient">Website</span>
+        </h1>
+        <p class="text-gray-400 mt-3">
+          A responsive storefront featuring product browsing, category
+          filtering, a shopping cart, and checkout flow.
+        </p>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <button
+            id="copyLinkBtn"
+            type="button"
+            class="px-5 py-2 border border-yellow-400/60 text-yellow-300 rounded-full"
+          >
+            Copy / Share link
+          </button>
+
+          <a
+            href="https://onlie-shop.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2 border border-purple-500/60 text-purple-300 rounded-full"
+          >
+            Live site
+          </a>
+
+          <a
+            href="https://github.com/NoroffFEU/JavaScript-Frameworks-ca/blob/main/README.md#readme"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2 border border-white/10 text-gray-200 rounded-full"
+          >
+            GitHub README
+          </a>
+        </div>
+        <p
+          id="copyStatus"
+          class="text-sm text-gray-400 mt-3"
+          aria-live="polite"
+        ></p>
+
+        <section class="mt-8 glass-effect rounded-lg p-6">
+          <figure class="space-y-3">
+            <img
+              src="images/Ecom.png"
+              alt="E-commerce project screenshot"
+              class="w-full rounded-lg border border-white/10"
+              loading="lazy"
+            />
+            <figcaption class="text-sm text-gray-400">
+              Preview of the e-commerce project interface.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="mt-8 glass-effect rounded-lg p-6">
+          <h2 class="text-2xl font-bold mb-3">Project description</h2>
+          <p class="text-gray-300 leading-relaxed">
+            I focused on responsive layout, consistent UI, and a clear shopping
+            experience. Improvements include cleaner structure, better spacing,
+            and accessibility-focused HTML for a more professional presentation.
+          </p>
+          <p class="text-gray-300 mt-3">
+            <strong class="text-white">Technologies:</strong> React, JavaScript,
+            Tailwind CSS
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const btn = document.getElementById("copyLinkBtn");
+      const status = document.getElementById("copyStatus");
+      btn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          status.textContent = "Link copied! You can now paste and share it.";
+        } catch {
+          status.textContent =
+            "Copy failed. Please copy the URL from the address bar.";
+        }
+      });
+    </script>
+  </body>
+</html>

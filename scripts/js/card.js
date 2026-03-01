@@ -119,13 +119,15 @@ document.addEventListener("DOMContentLoaded", () => {
             (project.readme || "").trim() ||
             (githubUrl ? `${githubUrl}#readme` : "");
 
-          const readMoreLink = readmeUrl
+          const articleUrl = (project.article || "").trim();
+
+          const readMoreLink = articleUrl
             ? ` <a
-                  href="${readmeUrl}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="ml-2 inline underline text-yellow-300 hover:text-yellow-200 transition-colors"
-                >Read more</a>`
+        href="${articleUrl}"
+        class="ml-2 inline underline text-yellow-300 hover:text-yellow-200 transition-colors"
+      >
+        Read more
+      </a>`
             : "";
 
           item.innerHTML = `
