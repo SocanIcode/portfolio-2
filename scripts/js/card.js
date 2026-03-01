@@ -147,42 +147,41 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="text-white/90 text-sm leading-relaxed py-6">
           ${project.description}
         </p>
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full pt-2 sm:items-stretch">
+  <a
+    href="${project.github}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-btn w-full sm:flex-1 h-11 px-4 border border-purple-500/60 text-purple-300 rounded-full font-medium
+           inline-flex items-center justify-center gap-2 whitespace-nowrap
+           hover:shadow-lg hover:shadow-purple-500/25 hover:border-purple-400
+           transition-all duration-300 hover-scale"
+  >
+    <i class="fab fa-github text-base leading-none"></i>
+    <span>GitHub</span>
+  </a>
 
-        <div class="flex gap-4 justify-center w-full pt-2">
-          <a
-            href="${project.github}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-btn flex-1 px-4 py-2 border border-purple-500/60 text-purple-300 rounded-full font-medium
-                   flex items-center justify-center gap-2
-                   hover:shadow-lg hover:shadow-purple-500/25 hover:border-purple-400
-                   transition-all duration-300 hover-scale"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-
-          <a
-            href="${project.live_demo}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-btn flex-1 px-4 py-2 border border-purple-500/60 text-purple-300 rounded-full font-medium
-                   flex items-center justify-center gap-2
-                   hover:shadow-lg hover:shadow-purple-500/25 hover:border-purple-400
-                   transition-all duration-300 hover-scale"
-          >
-            <svg
-              class="w-4 h-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7M21 3L10 14"/>
-              <rect x="3" y="8" width="11" height="13" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Live Demo
-          </a>
-        </div>
+  <a
+    href="${project.live_demo}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-btn w-full sm:flex-1 h-11 px-4 border border-purple-500/60 text-purple-300 rounded-full font-medium
+           inline-flex items-center justify-center gap-2 whitespace-nowrap
+           hover:shadow-lg hover:shadow-purple-500/25 hover:border-purple-400
+           transition-all duration-300 hover-scale"
+  >
+    <svg
+      class="w-4 h-4 shrink-0"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7M21 3L10 14"/>
+      <rect x="3" y="8" width="11" height="13" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Live Demo</span>
+  </a>
+</div>
       </div>
     </div>
   </div>

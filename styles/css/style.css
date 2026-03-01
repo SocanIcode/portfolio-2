@@ -1,3 +1,15 @@
+.navbar {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.navbar.navbar-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 #ai-agent-root {
   position: fixed;
   right: 18px;
