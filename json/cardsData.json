@@ -27,6 +27,28 @@
       "article": "socialmedia.html",
       "live_demo": "https://fancy-eclair-31b524.netlify.app/profile/",
       "tech": "HTML, Tailwind CSS, JavaScript"
+    },
+    {
+      "title": "Driving License Learning App",
+      "description": "A full-stack driving license learning application in Tigrinya built from concept to launch-ready product. Features user-friendly learning modules, quizzes, and Supabase database integration.",
+      "image": "images/driving-app.jpg",
+      "category": "Full Stack",
+      "tech": "JavaScript, HTML, CSS, Supabase, React",
+      "github": "https://github.com/yourusername/driving-app",
+      "article": "https://play.google.com/store/apps/details?id=com.feshay.mahta&hl=en",
+      "demo": "https://your-app-link.com",
+      "featured": true
+    },
+    {
+      "title": "WordPress Bookstore",
+      "description": "Freelance bookstore project built with WordPress. Customized features, improved user experience, and implemented client-specific functionality.",
+      "image": "images/bookstore.jpg",
+      "article": "https://play.google.com/store/apps/details?id=com.feshay.mahta&hl=en",
+      "category": "WordPress",
+      "technologies": ["WordPress", "PHP", "JavaScript", "CSS"],
+      "github": "",
+      "demo": "",
+      "featured": true
     }
   ]
 }
